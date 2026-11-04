@@ -48,6 +48,7 @@ em{font-style:normal;color:var(--pink)}
 .nav a{padding:8px 14px;font-weight:600;font-size:14px;color:var(--mu);transition:color .2s}
 .nav a:hover,.nav a.on{color:var(--tx)}
 .nav a.on{box-shadow:inset 0 -2px 0 var(--pink)}
+.nav a.ext::after{content:'\2197';margin-left:4px;font-size:11px;opacity:.55}
 .cur{border:1px solid var(--line2);padding:6px 12px;font-weight:700;font-size:13px;clip-path:var(--cuts)}
 .mb{display:none;background:none;border:1px solid var(--line2);width:40px;height:40px;cursor:pointer;margin-left:auto}
 .mb span{display:block;width:18px;height:2px;background:var(--tx);margin:4px auto}
@@ -537,6 +538,8 @@ em{font-style:normal;color:var(--pink)}
 			<a href="#/games" data-r="games">Top Up</a>
 			<a href="#/track" data-r="track">Track Order</a>
 			<a href="#/faq" data-r="faq">FAQ</a>
+			<a class="ext" href="https://xenoixxx.github.io/main-bonaksu-website/">Main Site</a>
+			<a class="ext" href="https://tournaments.bonaksugaming.com/" target="_blank" rel="noopener">Tournaments</a>
 		</nav>
 		<div class="acct" id="acct"></div>
 		<button class="mb" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')"><span></span><span></span><span></span></button>
@@ -548,7 +551,7 @@ em{font-style:normal;color:var(--pink)}
 		<div class="cols">
 			<div><a class="logo" href="#/"><img src="https://bonaksugaming.com/wp-content/uploads/2025/09/bg-logo-2.svg" alt=""><span>BONAKSU<small>TOP-UP</small></span></a><p class="mu" style="font-size:14px;margin-top:14px">Fast, cheap game top-ups for the Bonaksu community. Pay with GCash, Maya or GrabPay and get your credits in minutes.</p></div>
 			<div><h4>Shop</h4><a href="#/games">All games</a><a href="#/track">Track order</a><a href="#/faq">FAQ</a></div>
-			<div><h4>Community</h4><a href="../">Bonaksu Gaming</a><a href="https://discord.gg/bonaksu" target="_blank" rel="noopener">Discord</a><a href="https://tournaments.bonaksugaming.com/" target="_blank" rel="noopener">Tournaments</a></div>
+			<div><h4>Community</h4><a href="https://xenoixxx.github.io/main-bonaksu-website/">Bonaksu Gaming</a><a href="https://discord.gg/bonaksu" target="_blank" rel="noopener">Discord</a><a href="https://tournaments.bonaksugaming.com/" target="_blank" rel="noopener">Tournaments</a></div>
 			<div><h4>Support</h4><a href="#/faq">Help center</a><a href="#/track">Order status</a><span class="mu" style="font-size:14px;display:block;padding:3px 0">Daily, 8am – 12mn PHT</span></div>
 		</div>
 		<div class="cp"><span>© 2026 Bonaksu Gaming. All rights reserved.</span><span>Bonaksu is not affiliated with any game publisher. Game names belong to their owners.</span></div>
