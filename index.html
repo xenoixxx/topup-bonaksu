@@ -5,6 +5,13 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Bonaksu Top-Up</title>
+<meta name="description" content="Top up Mobile Legends, Honor of Kings, Valorant and more with GCash, Maya or GrabPay. Fast game credits from the Bonaksu Gaming community.">
+<meta name="theme-color" content="#06060c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bonaksu Top-Up · Play more. Pay less.">
+<meta property="og:description" content="Fast, cheap game top-ups for the Bonaksu community. Pay with GCash, Maya or GrabPay.">
+<meta property="og:image" content="https://bonaksugaming.com/wp-content/uploads/2025/09/bglogoneon-smaller.jpg">
+<link rel="icon" href="https://bonaksugaming.com/wp-content/uploads/2025/09/bg-logo-2.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;900&family=Oxanium:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -378,6 +385,102 @@ em{font-style:normal;color:var(--pink)}
 .bpop .art b{font-size:12px}
 .bpop small{display:block;color:var(--mu);font-size:11px}
 
+/* game photos */
+.art.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;transition:transform .5s}
+.art.ph b{opacity:0}
+.art.ph.lg img{object-fit:contain;padding:22%;filter:drop-shadow(0 6px 18px rgba(255,70,85,.45))}
+.art.ph:after{display:none}
+.gt:hover .art.ph img{transform:scale(1.08)}
+.gh .bgx{background-size:cover!important}
+
+/* accounts + wallet */
+.acct{display:flex;align-items:center;gap:10px}
+.btn.sm{padding:9px 16px;font-size:12px}
+.wal{display:flex;align-items:center;gap:7px;border:1px solid var(--line2);padding:6px 12px 6px 6px;font-family:var(--fo);font-size:13px;clip-path:var(--cuts);transition:border-color .2s}
+.wal i{width:22px;height:22px;display:grid;place-items:center;background:var(--pink);font-style:normal;font-size:12px;clip-path:var(--cuts)}
+.wal:hover{border-color:var(--pink)}
+.av{display:grid;place-items:center;border-radius:50%;overflow:hidden;font-family:var(--fo);font-weight:900;color:#fff;flex:none;box-shadow:0 0 0 2px rgba(255,255,255,.12)}
+.av img{width:100%;height:100%;object-fit:cover}
+.avl{transition:transform .2s}
+.avl:hover{transform:scale(1.08)}
+.wpromo{display:flex;align-items:center;gap:14px;margin-bottom:12px;padding:12px 14px;border:1px dashed rgba(var(--pr),.6);background:rgba(var(--pr),.06);clip-path:var(--cuts);transition:background .2s}
+.wpromo:hover{background:rgba(var(--pr),.12)}
+.wpromo .lg{width:38px;height:38px;display:grid;place-items:center;background:linear-gradient(135deg,#ff1a8c,#7a0044);font-weight:900;flex:none;border-radius:8px}
+.wpromo small{display:block;color:var(--mu);font-size:12px}
+.wpromo .go{margin-left:auto;color:var(--pink2);font-weight:700;font-size:13px;white-space:nowrap}
+.wbox{margin:18px 0 0;border:1px solid var(--line2);background:var(--bg2)}
+.wbox div{display:flex;justify-content:space-between;padding:12px 14px;font-size:14px;border-bottom:1px dashed var(--line)}
+.wbox div span{color:var(--mu)}
+.wbox .after{border-bottom:0;background:rgba(38,224,160,.06)}
+.wbox .after b{color:var(--green);font-family:var(--fo)}
+.auth{display:grid;grid-template-columns:minmax(0,440px) minmax(0,1fr);gap:40px;align-items:center;max-width:980px;margin:0 auto}
+.auth .box{margin:0}
+.auth h2{font-size:clamp(24px,3vw,32px)}
+.atabs{display:flex;gap:4px;margin-bottom:22px;background:var(--bg2);padding:4px;clip-path:var(--cuts)}
+.atabs a{flex:1;text-align:center;padding:9px;font-weight:700;font-size:13px;color:var(--mu);transition:background .2s,color .2s}
+.atabs a.on{background:var(--pink);color:#fff}
+.auth .perks{display:grid;gap:14px}
+.auth .perks div{display:grid;grid-template-columns:46px 1fr;column-gap:14px;align-items:center;background:var(--panel);border:1px solid var(--line);padding:16px;clip-path:var(--cut);animation:fadeUp .5s backwards;animation-delay:calc(var(--i)*120ms + .2s)}
+.auth .perks i{grid-row:span 2;width:46px;height:46px;display:grid;place-items:center;background:rgba(var(--pr),.14);color:var(--pink2);font-style:normal;font-size:20px;font-weight:900;clip-path:var(--cuts)}
+.auth .perks span{color:var(--mu);font-size:13px}
+.phero{position:relative;overflow:hidden;padding:44px 0;border-bottom:1px solid var(--line);background:linear-gradient(120deg,color-mix(in srgb,var(--a1) 35%,transparent),transparent 60%),linear-gradient(300deg,color-mix(in srgb,var(--a2) 60%,transparent),transparent 70%)}
+.phero:before{content:"";position:absolute;inset:0;background:var(--hex)}
+.phero .pcard{position:relative;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.phero .av{box-shadow:0 0 0 4px rgba(255,255,255,.12),0 16px 40px rgba(0,0,0,.5);animation:popIn .6s cubic-bezier(.2,.7,.2,1.4) backwards}
+.pinfo{flex:1;min-width:220px}
+.pinfo h1{font-size:clamp(26px,4vw,40px);margin:4px 0 6px}
+.pinfo p{margin:0 0 10px;max-width:520px}
+.pinfo .chips span{background:rgba(0,0,0,.35)}
+.pstats{display:flex;gap:1px;background:var(--line);border:1px solid var(--line);clip-path:var(--cut)}
+.pstats div{background:rgba(14,14,26,.9);padding:14px 20px;text-align:center;min-width:110px}
+.pstats b{display:block;font-family:var(--fo);font-size:16px;color:var(--pink2)}
+.pstats span{font-size:11px;color:var(--mu);letter-spacing:1px;text-transform:uppercase}
+.ptabs{display:flex;gap:6px;align-items:center;margin:26px 0 20px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.ptabs a{padding:12px 16px;font-weight:700;font-size:14px;color:var(--mu);box-shadow:inset 0 -2px 0 transparent;transition:color .2s,box-shadow .2s}
+.ptabs a.on,.ptabs a:hover{color:var(--tx);box-shadow:inset 0 -2px 0 var(--pink)}
+.ptabs .lo{margin-left:auto;background:none;border:1px solid var(--line2);padding:7px 14px;font-weight:600;font-size:13px;cursor:pointer;color:var(--mu)}
+.ptabs .lo:hover{border-color:#ff6b88;color:#ff6b88}
+.lay2{display:grid;grid-template-columns:400px 1fr;gap:22px;align-items:start}
+.lay2 .box{margin:0}
+.wbal{display:flex;justify-content:space-between;align-items:baseline;padding:16px;margin-bottom:16px;background:linear-gradient(135deg,rgba(var(--pr),.2),rgba(var(--pr),.04));border:1px solid rgba(var(--pr),.35);clip-path:var(--cuts)}
+.wbal span{color:var(--mu);font-size:13px}
+.wbal b{font-family:var(--fo);font-size:26px}
+.amts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.amt{background:var(--bg2);border:1px solid var(--line2);padding:12px 6px;font-family:var(--fo);font-size:14px;cursor:pointer;clip-path:var(--cuts);transition:border-color .2s,background .2s,transform .2s}
+.amt:hover{transform:translateY(-2px);border-color:var(--pink2)}
+.amt.on{border-color:var(--pink);background:rgba(var(--pr),.14);animation:pop .3s}
+.txs{display:grid;gap:2px;max-height:520px;overflow:auto}
+.tx{display:flex;align-items:center;gap:12px;padding:11px 4px;border-bottom:1px dashed var(--line);animation:slideIn .4s backwards}
+.tx small{display:block;color:var(--mu);font-size:12px}
+.ti{width:30px;height:30px;display:grid;place-items:center;font-weight:900;border-radius:50%;flex:none}
+.ti.in{background:rgba(38,224,160,.15);color:var(--green)}
+.ti.out{background:rgba(255,107,136,.12);color:#ff6b88}
+.ta{margin-left:auto;font-family:var(--fo);font-size:14px;white-space:nowrap}
+.ta.in{color:var(--green)}
+.avpick{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.avo{width:52px;height:52px;border-radius:50%;border:0;display:grid;place-items:center;font-family:var(--fo);font-weight:900;font-size:20px;color:#fff;cursor:pointer;box-shadow:0 0 0 2px var(--line2);transition:transform .2s,box-shadow .2s;overflow:hidden}
+.avo:hover{transform:scale(1.08)}
+.avo.on{box-shadow:0 0 0 3px var(--pink),0 0 18px rgba(var(--pr),.6)}
+.avo.up{background:var(--bg2);color:var(--mu);font-size:22px}
+.avo img{width:100%;height:100%;object-fit:cover}
+.linkb{background:none;border:0;color:var(--mu);font-size:12px;cursor:pointer;text-decoration:underline}
+.fl textarea{width:100%;background:var(--bg2);border:1px solid var(--line2);padding:12px 14px;outline:0;font:inherit;color:inherit;resize:vertical}
+.fl textarea:focus{border-color:var(--pink)}
+
+@media (max-width:960px){
+	.auth,.lay2{grid-template-columns:1fr}
+	.auth .perks{display:none}
+	.pstats{width:100%}
+	.pstats div{flex:1;min-width:0;padding:12px 8px}
+}
+@media (max-width:720px){
+	.acct{margin-left:auto}
+	.hd .mb{margin-left:0}
+}
+@media (max-width:480px){
+	.wal{display:none}
+}
+
 @media (max-width:960px){
 	.deals,.stats{grid-template-columns:1fr 1fr}
 	.mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:88;align-items:center;justify-content:space-between;gap:14px;padding:12px 16px;background:rgba(14,14,26,.97);backdrop-filter:blur(10px);border-top:1px solid var(--line2)}
@@ -435,7 +538,7 @@ em{font-style:normal;color:var(--pink)}
 			<a href="#/track" data-r="track">Track Order</a>
 			<a href="#/faq" data-r="faq">FAQ</a>
 		</nav>
-		<span class="cur">₱ PHP</span>
+		<div class="acct" id="acct"></div>
 		<button class="mb" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')"><span></span><span></span><span></span></button>
 	</div>
 </header>
@@ -445,7 +548,7 @@ em{font-style:normal;color:var(--pink)}
 		<div class="cols">
 			<div><a class="logo" href="#/"><img src="https://bonaksugaming.com/wp-content/uploads/2025/09/bg-logo-2.svg" alt=""><span>BONAKSU<small>TOP-UP</small></span></a><p class="mu" style="font-size:14px;margin-top:14px">Fast, cheap game top-ups for the Bonaksu community. Pay with GCash, Maya or GrabPay and get your credits in minutes.</p></div>
 			<div><h4>Shop</h4><a href="#/games">All games</a><a href="#/track">Track order</a><a href="#/faq">FAQ</a></div>
-			<div><h4>Community</h4><a href="https://bonaksugaming.com" target="_blank" rel="noopener">Bonaksu Gaming</a><a href="https://discord.gg/bonaksu" target="_blank" rel="noopener">Discord</a><a href="https://tournaments.bonaksugaming.com/" target="_blank" rel="noopener">Tournaments</a></div>
+			<div><h4>Community</h4><a href="../">Bonaksu Gaming</a><a href="https://discord.gg/bonaksu" target="_blank" rel="noopener">Discord</a><a href="https://tournaments.bonaksugaming.com/" target="_blank" rel="noopener">Tournaments</a></div>
 			<div><h4>Support</h4><a href="#/faq">Help center</a><a href="#/track">Order status</a><span class="mu" style="font-size:14px;display:block;padding:3px 0">Daily, 8am – 12mn PHT</span></div>
 		</div>
 		<div class="cp"><span>© 2026 Bonaksu Gaming. All rights reserved.</span><span>Bonaksu is not affiliated with any game publisher. Game names belong to their owners.</span></div>
@@ -480,6 +583,31 @@ em{font-style:normal;color:var(--pink)}
 		{ id: 'roblox', n: 'Roblox Gift Card', s: 'Roblox', ab: 'RB', c1: '#e2231a', c2: '#1a1a1a', cat: 'vouchers', off: 5, rv: '872', pub: 'Roblox', cur: 'Robux card', ids: ['Email for the code'], packs: [[400, 249], [800, 489], [1700, 979], [4500, 2449]], bonus: {}, hot: [], voucher: true },
 		{ id: 'steam', n: 'Steam Wallet Code', s: 'Steam', ab: 'ST', c1: '#2a475e', c2: '#0b141c', cat: 'vouchers', off: 3, rv: '1.3K', pub: 'Valve', cur: 'PHP wallet', ids: ['Email for the code'], packs: [[100, 103], [250, 256], [500, 510], [1000, 1015], [2500, 2530]], bonus: {}, hot: [], voucher: true }
 	];
+	// official store icons (Google Play). Games without one keep the styled tile.
+	var ICONS = {
+		mlbb: 'MztmLpB1-_eFbHnqNzzvzl5zjiOH2BEb0D71uBxZYf_4BEmW3QEPWODhRtyqY7Qz4wRLwQ--Rg1RAjOFqtHSs-o',
+		hok: 'hEm5NVeEv7UfFJaK8GZdfWe7p3DB_VvYx57qIEHbR0tMV_NToziH0Vbgd6CxLiWF-iURpAe-jsC_UGUDt0diPQ',
+		gi: 'PQEqjOxr-3uZaNHmWoQinLVQQ9fbSegMKXmqgFm5nGgagqC2REH-1er3BguYStWbH3YStijj5WH1DDlwPh2ehw',
+		wr: '7-kbcpgrCOE1mleJ9g0d61sJeoqKcQRIj4iFvJ8DjPlRIfocOWfOQsXzKWw2I5oHySVdbjR2fvzfCCz1FYQ-RQ',
+		bs: 'Lv1XpRDOaNmxZPWkix0FVyfaLYeNnVwZEUGl9QGwY_tu36xgUbQXNtpYWrMBpib7e-JonRYUjl2GnjKr0rftgw',
+		ff: 'cK-U0_B9GrnSy26SNISDuvU_hL4VggyqJ1J5V2oiuyVEfiGo7fzegdBjk0ejXPg3PKK5sPwumdLBbWv8KkBKLQ',
+		bleach: 'GguGHeUe0tZFjvPdVzll1dKQ2uyiIMNQU0xqXBifcsUPd2YOLCi1QhPKq4lRFNVvm_y7iW4NTk5JaHkDlA4JDRg',
+		heart: 'FtZNAkKn4faEpRU4UjtRRUk-aQP5zwiN1Kg4FzAcQBN7S8-PfDo7ODxmjaPlMu3HOFJ6-1WhzXxwKA6q1bOw',
+		roblox: 'QqZj22aXblAyYDxLQw-Gg0ycW0QkKhrDnwqgERZU9BMRXZnMlgXfq-94sikG5mEpt_I0lzZxcUzfLblmQgwYzUE',
+		steam: 'E_x2GPSJakCdUYfECBptVyFoVnC4BxIPy3K4OdbwNyEtEJkRAY_J-Lo_Ltiybq6LiJ_aZCIzvqLv5h4Fbk91',
+		roc: 'ED8gHnN8SOn8bl7TYnBs23bbCWlcsPIs1FKcx8mj8TvhYUoIWevEn6eEKHKvAe_5xUN8BC5JpSq0eg855-H9',
+		dnm: 'vxFcD3Ten9CyDfSzHuBaNi4R3yqMIawuWyNMDgz9vgxJfQ5NOiw0p6ANpbnnPEOt-dsB2qNdBjnLV2Gzg__dWOU'
+	};
+	GAMES.forEach(function (g) { if (ICONS[g.id]) g.img = 'https://play-lh.googleusercontent.com/' + ICONS[g.id] + '=s256-rw'; });
+	// Riot PC games aren't on Google Play, so use the art from Riot's own sites.
+	// lbg: Valorant's image is a transparent logo, shown centered on its brand navy.
+	var RIOT = 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/';
+	GAMES.forEach(function (g) {
+		if (g.id === 'val') { g.img = RIOT + 'cbf4460132cdfeb2a97fad5f9dd25ba0bc058f76-128x128.png?accountingTag=VAL'; g.lbg = '#0f1923'; }
+		if (g.id === 'lol') g.img = RIOT + '565197caf987af4e4da307df6e2b235a28714736-837x469.jpg?accountingTag=LoL';
+		// Ragnarok Zero: Global is PC-only; official launch art from Gravity's press release
+		if (g.id === 'roz') g.img = 'https://mmx.prnasia.com/media/MS1970468/20260817071833EDT_image_1.jpg?id=OA2899855&p=medium600';
+	});
 	var CATS = [['all', 'All'], ['trending', 'Trending'], ['popular', 'Popular'], ['new', 'New release'], ['vouchers', 'Gift cards & vouchers']];
 	var PAYS = [
 		{ id: 'gcash', n: 'GCash', d: 'Scan the QR with your GCash app', bg: '#007dfe', fg: '#fff', t: 'G', fee: 0 },
@@ -517,7 +645,8 @@ em{font-style:normal;color:var(--pink)}
 	function toast(t) { var el = $('#toast'); el.textContent = t; el.classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(function () { el.classList.remove('on'); }, 2400); }
 
 	function art(g, big) {
-		return '<div class="art" style="background:linear-gradient(135deg,' + g.c1 + ',' + g.c2 + ')"><span class="gl"></span><b' + (big ? '' : '') + '>' + g.ab + '</b></div>';
+		return '<div class="art' + (g.img ? ' ph' : '') + (g.lbg ? ' lg' : '') + '" style="background:' + (g.lbg ? 'radial-gradient(circle at 50% 40%,#1f2d3b,' + g.lbg + ' 70%)' : 'linear-gradient(135deg,' + g.c1 + ',' + g.c2 + ')') + '"><span class="gl"></span><b>' + g.ab + '</b>' +
+			(g.img ? '<img src="' + g.img + '" alt="' + esc(g.n) + '" loading="lazy" onerror="this.parentNode.classList.remove(\'ph\');this.remove()">' : '') + '</div>';
 	}
 	function pick(a) { return a[Math.floor(Math.random() * a.length)]; }
 	function fakeBuy() {
@@ -557,6 +686,34 @@ em{font-style:normal;color:var(--pink)}
 	// --- orders kept in localStorage so Track Order works across reloads
 	function loadOrders() { try { return JSON.parse(localStorage.getItem('bk-orders') || '[]'); } catch (e) { return []; } }
 	function saveOrders(list) { try { localStorage.setItem('bk-orders', JSON.stringify(list.slice(0, 20))); } catch (e) {} }
+
+	// --- demo accounts + wallet. Saved in this browser only; the live site needs a real server for these.
+	var AVS = [['#ff1a8c', '#6a0038'], ['#1b4dff', '#0a1a5c'], ['#26e0a0', '#06402c'], ['#ffb020', '#5a3a00'], ['#c06cff', '#2a0a4a'], ['#ff5a1f', '#3a1000']];
+	var WALLET_PM = { id: 'wallet', n: 'Bonaksu Wallet', bg: 'linear-gradient(135deg,#ff1a8c,#7a0044)', fg: '#fff', t: '₱', fee: 0 };
+	function users() { try { return JSON.parse(localStorage.getItem('bk-users') || '{}'); } catch (e) { return {}; } }
+	function me() { var e = null; try { e = localStorage.getItem('bk-session'); } catch (x) {} return e ? users()[e] || null : null; }
+	function setSession(email) { try { if (email) localStorage.setItem('bk-session', email); else localStorage.removeItem('bk-session'); } catch (e) {} paintAcct(); }
+	function saveMe(u) { var all = users(); all[u.email] = u; try { localStorage.setItem('bk-users', JSON.stringify(all)); } catch (e) { toast('Couldn\'t save, your browser storage is full'); } paintAcct(); }
+	function hash(s) { var h = 5381; for (var i = 0; i < s.length; i++) h = ((h * 33) ^ s.charCodeAt(i)) >>> 0; return h.toString(36); }
+	function addTx(u, type, amt, note) { u.tx = [{ t: Date.now(), type: type, amt: amt, note: note, bal: u.bal }].concat(u.tx || []).slice(0, 40); }
+	function payList() {
+		var u = me();
+		if (!u) return PAYS;
+		var w = Object.assign({}, WALLET_PM, { d: 'Balance: ' + peso(u.bal) });
+		return [w].concat(PAYS);
+	}
+	function avatar(u, size) {
+		var a = AVS[u.av || 0];
+		return '<span class="av" style="width:' + size + 'px;height:' + size + 'px;font-size:' + Math.round(size * 0.42) + 'px;background:linear-gradient(135deg,' + a[0] + ',' + a[1] + ')">' +
+			(u.pic ? '<img src="' + u.pic + '" alt="">' : esc((u.name || '?').charAt(0).toUpperCase())) + '</span>';
+	}
+	function paintAcct() {
+		var u = me(), el = $('#acct');
+		if (!el) return;
+		el.innerHTML = u ? '<a class="wal" href="#/account/wallet" title="Wallet balance"><i>₱</i>' + peso(u.bal).slice(1) + '</a><a class="avl" href="#/account" aria-label="My account">' + avatar(u, 36) + '</a>'
+			: '<a class="btn sm" href="#/login" data-ret="1">Log in</a>';
+	}
+	function goBack(def) { var r = null; try { r = sessionStorage.getItem('bk-ret'); sessionStorage.removeItem('bk-ret'); } catch (e) {} location.hash = r || def; }
 
 	// --- pages
 	function home() {
@@ -638,7 +795,7 @@ em{font-style:normal;color:var(--pink)}
 			var ph = lab === 'Zone ID' ? 'e.g. 2345' : lab === 'Tagline' ? 'e.g. PH1' : lab.indexOf('Email') > -1 ? 'you@email.com' : lab === 'Riot ID' ? 'e.g. BonaksuPlayer' : 'e.g. 123456789';
 			return '<div class="fl"><label>' + lab + '</label><input data-id="' + i + '" placeholder="' + ph + '" ' + (lab.indexOf('Email') > -1 ? 'type="email"' : '') + '></div>';
 		}).join('');
-		return '<section class="gh"><div class="bgx" style="background:linear-gradient(135deg,' + g.c1 + ',' + g.c2 + ')"></div><div class="wrap">' + art(g, true) +
+		return '<section class="gh"><div class="bgx" style="background:' + (g.img ? 'url(' + g.img + ') center/cover,' : '') + 'linear-gradient(135deg,' + g.c1 + ',' + g.c2 + ')"></div><div class="wrap">' + art(g, true) +
 			'<div><div class="crumbs"><a href="#/">Home</a> / <a href="#/games">Top up</a> / ' + g.s + '</div><h1>' + g.n + '</h1>' +
 			'<div class="chips"><span>' + g.pub + '</span><span class="g">● Instant delivery</span><span class="live"><i></i>' + (8 + (g.id.charCodeAt(0) * 7 + g.id.length * 13) % 40) + ' topped up in the last hour</span><span>★ ' + g.rv + ' reviews</span>' + (g.off ? '<span style="color:var(--pink2)">' + g.off + '% off today</span>' : '') + '</div></div></div></section>' +
 			'<div class="wrap"><div class="lay"><div>' +
@@ -648,7 +805,8 @@ em{font-style:normal;color:var(--pink)}
 				var now = priceOf(g, p[1]);
 				return '<button class="pk" data-pk="' + i + '">' + (g.hot.indexOf(p[0]) > -1 ? '<span class="hot">BEST VALUE</span>' : '') + '<span class="q">' + D + p[0].toLocaleString() + '</span><span class="bn">' + (g.bonus[p[0]] || '') + '</span><div class="mu" style="font-size:12px">' + g.cur + '</div><div class="pr">' + peso(now) + (g.off ? '<span class="was">' + peso(p[1]) + '</span>' : '') + '</div></button>';
 			}).join('') + '</div></div>' +
-			'<div class="box"><h3><i>3</i>Payment method</h3><div class="pms">' + PAYS.map(function (p, i) {
+			'<div class="box"><h3><i>3</i>Payment method</h3>' + (me() ? '' : '<a class="wpromo" href="#/login" data-ret="1"><span class="lg">₱</span><span><b>Pay faster with Bonaksu Wallet</b><small>Log in or create an account to top up your wallet and check out in one tap.</small></span><span class="go">Log in →</span></a>') +
+			'<div class="pms">' + payList().map(function (p, i) {
 				return '<label class="pm' + (i === 0 ? ' on' : '') + '"><input type="radio" name="pm" value="' + p.id + '"' + (i === 0 ? ' checked' : '') + '><span class="lg" style="background:' + p.bg + ';color:' + p.fg + '">' + p.t + '</span><span><b>' + p.n + '</b><small>' + p.d + '</small></span><span class="fee">' + (p.fee ? '+' + p.fee * 100 + '% fee' : 'No fee') + '</span></label>';
 			}).join('') + '</div></div>' +
 			'</div><aside class="sum"><div class="box"><h3>Order summary</h3>' +
@@ -700,7 +858,7 @@ em{font-style:normal;color:var(--pink)}
 			h += '<h3 style="font-size:14px;margin-top:34px">Your recent orders</h3><div class="olist" style="max-width:560px">' + orders.slice(0, 6).map(function (x) {
 				var g = game(x.g);
 				var done = (Date.now() - x.t) / 60000 >= 1;
-				return '<a class="oi" href="#/track/' + x.id + '"><div class="art" style="background:linear-gradient(135deg,' + g.c1 + ',' + g.c2 + ')"><b>' + g.ab + '</b></div><div><b class="oid" style="font-size:13px">' + x.id + '</b><div class="mu" style="font-size:12px">' + g.s + ' · ' + esc(x.pk) + '</div></div><span class="st" style="' + (done ? '' : 'color:var(--amber)') + '">' + (done ? 'Delivered' : 'Processing') + '</span></a>';
+				return '<a class="oi" href="#/track/' + x.id + '">' + art(g) + '<div><b class="oid" style="font-size:13px">' + x.id + '</b><div class="mu" style="font-size:12px">' + g.s + ' · ' + esc(x.pk) + '</div></div><span class="st" style="' + (done ? '' : 'color:var(--amber)') + '">' + (done ? 'Delivered' : 'Processing') + '</span></a>';
 			}).join('') + '</div>';
 		} else {
 			h += '<p class="mu" style="margin-top:18px">Orders you place on this device show up here.</p>';
@@ -721,12 +879,164 @@ em{font-style:normal;color:var(--pink)}
 			qs.map(function (q, i) { return '<details' + (i === 0 ? ' open' : '') + '><summary>' + q[0] + '</summary><p>' + q[1] + '</p></details>'; }).join('') + '</div></div></section>';
 	}
 
+	function authPage(reg) {
+		return '<section class="sec"><div class="wrap"><div class="auth"><div class="box">' +
+			'<div class="atabs"><a href="#/login" class="' + (reg ? '' : 'on') + '">Log in</a><a href="#/register" class="' + (reg ? 'on' : '') + '">Create account</a></div>' +
+			'<h2>' + (reg ? 'Join <em>Bonaksu</em>' : 'Welcome <em>back</em>') + '</h2><p class="mu" style="margin:8px 0 20px">' + (reg ? 'Get your own wallet, faster checkout and a player profile.' : 'Log in to use your wallet and see your orders.') + '</p>' +
+			'<form id="auth" class="fields" style="grid-template-columns:1fr" novalidate>' +
+			(reg ? '<div class="fl"><label>Display name</label><input name="name" maxlength="24" placeholder="e.g. BonaksuPlayer" autocomplete="nickname"></div>' : '') +
+			'<div class="fl"><label>Email</label><input name="email" type="email" placeholder="you@email.com" autocomplete="email"></div>' +
+			'<div class="fl"><label>Password</label><input name="pw" type="password" placeholder="At least 6 characters" autocomplete="' + (reg ? 'new' : 'current') + '-password"></div>' +
+			'<div id="amsg"></div><button class="btn full">' + (reg ? 'Create account' : 'Log in') + '</button></form>' +
+			'<p class="hint" style="text-align:center;margin-top:16px">' + (reg ? 'Already have an account? <a href="#/login" style="color:var(--pink2)">Log in</a>' : 'New here? <a href="#/register" style="color:var(--pink2)">Create an account</a>') + '</p>' +
+			'<div class="note"><span>🔒</span><span>Demo: accounts and wallet balances are saved in this browser only. The live site will use a secure server.</span></div></div>' +
+			'<div class="perks">' + [['₱', 'Wallet', 'Add funds once, then check out in one tap.'], ['⚡', 'Faster top-ups', 'Your game IDs and orders in one place.'], ['★', 'Your profile', 'Pick an avatar, a bio and your main game.']].map(function (p, i) {
+				return '<div style="--i:' + i + '"><i>' + p[0] + '</i><b>' + p[1] + '</b><span>' + p[2] + '</span></div>';
+			}).join('') + '</div></div></div></section>';
+	}
+
+	function bindAuth(reg) {
+		$('#auth').addEventListener('submit', function (e) {
+			e.preventDefault();
+			var f = e.target, email = f.email.value.trim().toLowerCase(), pw = f.pw.value, name = reg ? f.name.value.trim() : '';
+			var all = users(), msg = $('#amsg'), err = '';
+			if (reg && name.length < 2) err = 'Pick a display name (2+ characters).';
+			else if (!/^\S+@\S+\.\S+$/.test(email)) err = 'Enter a valid email.';
+			else if (pw.length < 6) err = 'Password needs at least 6 characters.';
+			else if (reg && all[email]) err = 'That email already has an account. Log in instead.';
+			else if (!reg && (!all[email] || all[email].pw !== hash(pw))) err = 'Wrong email or password.';
+			if (err) { msg.innerHTML = '<div class="err" style="margin-bottom:12px">' + err + '</div>'; return; }
+			if (reg) {
+				var u = { name: name, email: email, pw: hash(pw), bal: 0, av: Math.floor(Math.random() * AVS.length), bio: '', fav: 'mlbb', joined: Date.now(), tx: [] };
+				all[email] = u;
+				try { localStorage.setItem('bk-users', JSON.stringify(all)); } catch (x) {}
+				toast('Welcome to Bonaksu, ' + name + '!');
+			} else toast('Welcome back, ' + all[email].name + '!');
+			setSession(email);
+			goBack(reg ? '#/account' : '#/account');
+		});
+	}
+
+	function accountPage(tab) {
+		var u = me(), a = AVS[u.av || 0], fav = game(u.fav);
+		tab = tab || 'profile';
+		var mine = loadOrders().filter(function (o) { return o.user === u.email; });
+		var spent = (u.tx || []).filter(function (t) { return t.amt < 0; }).reduce(function (s, t) { return s - t.amt; }, 0);
+		var h = '<section class="phero" style="--a1:' + a[0] + ';--a2:' + a[1] + '"><div class="wrap"><div class="pcard">' + avatar(u, 96) +
+			'<div class="pinfo"><span class="k">Player profile</span><h1>' + esc(u.name) + '</h1><p>' + (u.bio ? esc(u.bio) : '<span class="mu">No bio yet. Add one in Edit profile.</span>') + '</p>' +
+			'<div class="chips">' + (fav ? '<span>🎮 Mains ' + fav.s + '</span>' : '') + '<span>Member since ' + new Date(u.joined).toLocaleDateString('en-PH', { month: 'short', year: 'numeric' }) + '</span></div></div>' +
+			'<div class="pstats"><div><b>' + peso(u.bal) + '</b><span>Wallet</span></div><div><b>' + mine.length + '</b><span>Orders</span></div><div><b>' + peso(spent) + '</b><span>Spent</span></div></div></div></div></section>' +
+			'<div class="wrap"><div class="ptabs">' + [['profile', 'Edit profile'], ['wallet', 'Wallet'], ['orders', 'My orders']].map(function (t) {
+				return '<a href="#/account/' + t[0] + '" class="' + (tab === t[0] ? 'on' : '') + '">' + t[1] + '</a>';
+			}).join('') + '<button class="lo" id="logout">Log out</button></div>';
+		if (tab === 'wallet') {
+			h += '<div class="lay2"><div class="box"><h3>Add funds</h3><div class="wbal"><span>Current balance</span><b id="wbal">' + peso(u.bal) + '</b></div>' +
+				'<div class="amts">' + [100, 250, 500, 1000, 2000, 5000].map(function (v, i) { return '<button class="amt' + (i === 2 ? ' on' : '') + '" data-amt="' + v + '">' + peso(v).replace('.00', '') + '</button>'; }).join('') + '</div>' +
+				'<div class="fl" style="margin-top:14px"><label>Or enter an amount</label><input id="amtIn" type="number" min="50" max="50000" step="1" placeholder="₱50 – ₱50,000"></div>' +
+				'<div class="fl" style="margin-top:14px"><label>Pay with</label><select id="fundPm">' + PAYS.map(function (p) { return '<option value="' + p.id + '">' + p.n + (p.fee ? ' (+' + p.fee * 100 + '% fee)' : '') + '</option>'; }).join('') + '</select></div>' +
+				'<button class="btn full" id="fund" style="margin-top:18px">Add ₱500</button><p class="hint">Wallet funds can be used on any game. Purchases are deducted automatically.</p></div>' +
+				'<div class="box"><h3>Transactions</h3>' + ((u.tx || []).length ? '<div class="txs">' + u.tx.map(function (t) {
+					return '<div class="tx"><span class="ti ' + (t.amt > 0 ? 'in' : 'out') + '">' + (t.amt > 0 ? '+' : '−') + '</span><div><b>' + t.type + '</b><small>' + esc(t.note) + ' · ' + new Date(t.t).toLocaleString('en-PH', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + '</small></div><span class="ta ' + (t.amt > 0 ? 'in' : '') + '">' + (t.amt > 0 ? '+' : '−') + peso(Math.abs(t.amt)) + '</span></div>';
+				}).join('') + '</div>' : '<p class="mu">No transactions yet. Add funds to get started.</p>') + '</div></div>';
+		} else if (tab === 'orders') {
+			h += '<div class="box" style="max-width:720px">' + (mine.length ? '<div class="olist" style="margin:0">' + mine.map(function (x) {
+				var g = game(x.g), done = (Date.now() - x.t) / 60000 >= 1;
+				return '<a class="oi" href="#/track/' + x.id + '">' + art(g) + '<div><b class="oid" style="font-size:13px">' + x.id + '</b><div class="mu" style="font-size:12px">' + g.s + ' · ' + esc(x.pk) + ' · ' + peso(x.tot) + ' · ' + esc(x.pm) + '</div></div><span class="st" style="' + (done ? '' : 'color:var(--amber)') + '">' + (done ? 'Delivered' : 'Processing') + '</span></a>';
+			}).join('') + '</div>' : '<p class="mu">No orders yet.</p><a class="btn" href="#/games">Top up a game</a>') + '</div>';
+		} else {
+			h += '<form class="box" id="pform" style="max-width:720px"><h3>Edit profile</h3>' +
+				'<div class="fl"><label>Avatar</label><div class="avpick">' + AVS.map(function (c, i) {
+					return '<button type="button" class="avo' + (!u.pic && (u.av || 0) === i ? ' on' : '') + '" data-av="' + i + '" style="background:linear-gradient(135deg,' + c[0] + ',' + c[1] + ')">' + esc(u.name.charAt(0).toUpperCase()) + '</button>';
+				}).join('') + '<label class="avo up' + (u.pic ? ' on' : '') + '" title="Upload a photo">' + (u.pic ? '<img src="' + u.pic + '" alt="">' : '＋') + '<input type="file" id="pic" accept="image/*" hidden></label>' +
+				(u.pic ? '<button type="button" class="linkb" id="rmpic">Remove photo</button>' : '') + '</div></div>' +
+				'<div class="fields" style="margin-top:16px"><div class="fl"><label>Display name</label><input name="name" maxlength="24" value="' + esc(u.name) + '"></div>' +
+				'<div class="fl"><label>Main game</label><select name="fav">' + GAMES.filter(function (g) { return !g.voucher; }).map(function (g) { return '<option value="' + g.id + '"' + (g.id === u.fav ? ' selected' : '') + '>' + g.n + '</option>'; }).join('') + '</select></div>' +
+				'<div class="fl" style="grid-column:1/-1"><label>Bio <span id="bioN" style="float:right;letter-spacing:0">' + (u.bio || '').length + '/120</span></label><textarea name="bio" maxlength="120" rows="3" placeholder="Rank, main role, favorite hero…">' + esc(u.bio || '') + '</textarea></div></div>' +
+				'<button class="btn" style="margin-top:18px">Save profile</button></form>';
+		}
+		return h + '<div style="height:60px"></div></div>';
+	}
+
+	function bindAccount(tab) {
+		var u = me();
+		$('#logout').addEventListener('click', function () { setSession(null); toast('Logged out'); location.hash = '#/'; });
+		if (tab === 'wallet') {
+			var amt = 500;
+			function setAmt(v) { amt = v; $('#fund').textContent = 'Add ' + peso(v).replace('.00', ''); }
+			$$('.amt').forEach(function (b) {
+				b.addEventListener('click', function () { $$('.amt').forEach(function (x) { x.classList.remove('on'); }); b.classList.add('on'); $('#amtIn').value = ''; setAmt(+b.getAttribute('data-amt')); });
+			});
+			$('#amtIn').addEventListener('input', function () { var v = Math.floor(+this.value); $$('.amt').forEach(function (x) { x.classList.remove('on'); }); if (v) setAmt(v); });
+			$('#fund').addEventListener('click', function () {
+				if (amt < 50 || amt > 50000) { toast('Enter an amount from ₱50 to ₱50,000'); return; }
+				var p = PAYS.filter(function (x) { return x.id === $('#fundPm').value; })[0];
+				fundModal(amt, p);
+			});
+		} else if (!tab || tab === 'profile') {
+			var f = $('#pform'), pic = u.pic || null, av = u.av || 0;
+			$$('.avo[data-av]').forEach(function (b) {
+				b.addEventListener('click', function () { $$('.avo').forEach(function (x) { x.classList.remove('on'); }); b.classList.add('on'); av = +b.getAttribute('data-av'); pic = null; });
+			});
+			f.bio.addEventListener('input', function () { $('#bioN').textContent = f.bio.value.length + '/120'; });
+			if ($('#rmpic')) $('#rmpic').addEventListener('click', function () { u.pic = null; saveMe(u); route(); });
+			$('#pic').addEventListener('change', function onPic() {
+				var file = this.files[0];
+				if (!file) return;
+				// shrink to a small square so it fits in browser storage
+				var img = new Image(), rd = new FileReader();
+				rd.onload = function () { img.src = rd.result; };
+				img.onload = function () {
+					var c = document.createElement('canvas'), s = Math.min(img.width, img.height); c.width = c.height = 160;
+					c.getContext('2d').drawImage(img, (img.width - s) / 2, (img.height - s) / 2, s, s, 0, 0, 160, 160);
+					pic = c.toDataURL('image/jpeg', 0.82);
+					var lab = $('.avo.up'); lab.innerHTML = '<img src="' + pic + '" alt=""><input type="file" id="pic" accept="image/*" hidden>';
+					$('#pic').addEventListener('change', onPic);
+					$$('.avo').forEach(function (x) { x.classList.remove('on'); }); lab.classList.add('on');
+					toast('Photo ready, press Save profile');
+				};
+				rd.readAsDataURL(file);
+			});
+			f.addEventListener('submit', function (e) {
+				e.preventDefault();
+				var name = f.name.value.trim();
+				if (name.length < 2) { toast('Display name needs 2+ characters'); return; }
+				u.name = name; u.fav = f.fav.value; u.bio = f.bio.value.trim(); u.av = av; u.pic = pic;
+				saveMe(u); toast('Profile saved'); route();
+			});
+		}
+	}
+
+	function fundModal(amt, p) {
+		var modal = $('#modal'), box = $('#mbox'), qr = p.id !== 'card', fee = Math.round(amt * p.fee * 100) / 100, tot = amt + fee;
+		box.innerHTML = '<h3>Add ' + peso(amt) + ' to wallet</h3><p class="mu" style="margin:0;font-size:14px">' + (qr ? 'Open your ' + p.n + ' app and scan this code.' : 'Enter your card details to finish.') + '</p>' +
+			(qr ? '<div class="qr">' + fakeQR() + '</div>' : '<div class="fields" style="margin-top:16px"><div class="fl" style="grid-column:1/-1"><label>Card number</label><input value="4242 4242 4242 4242" readonly></div><div class="fl"><label>Expiry</label><input value="12 / 29" readonly></div><div class="fl"><label>CVC</label><input value="123" readonly></div></div><p class="hint">Demo test card, already filled in.</p>') +
+			'<div class="box" style="margin:18px 0 0;padding:14px"><div style="display:flex;justify-content:space-between;font-size:14px"><span class="mu">Wallet top-up' + (fee ? ' + fee' : '') + '</span><b style="color:var(--pink2);font-family:var(--fo)">' + peso(tot) + '</b></div></div>' +
+			'<div class="mrow"><button class="btn o" id="mc">Cancel</button><button class="btn" id="mp">' + (qr ? 'I\'ve paid' : 'Pay ' + peso(tot)) + '</button></div>';
+		modal.classList.add('on');
+		function close() { modal.classList.remove('on'); }
+		$('#mc').onclick = close;
+		modal.onclick = function (e) { if (e.target === modal) close(); };
+		$('#mp').onclick = function () {
+			var b = $('#mp'); b.disabled = true; b.innerHTML = '<span class="spin"></span> Confirming…';
+			setTimeout(function () {
+				close();
+				var u = me();
+				u.bal = Math.round((u.bal + amt) * 100) / 100;
+				addTx(u, 'Wallet top-up', amt, 'via ' + p.n);
+				saveMe(u);
+				toast(peso(amt) + ' added to your wallet');
+				route();
+				setTimeout(confetti, 200);
+			}, 1300);
+		};
+	}
+
 	function notFound() { return '<div class="wrap"><div class="done"><h1>Page not <em>found</em></h1><p class="mu">That page doesn\'t exist.</p><a class="btn" href="#/">Back home</a></div></div>'; }
 
 	// --- game page behaviour
 	function bindGame(g, pre) {
 		var sel = null, promo = null;
-		function pm() { return PAYS.filter(function (p) { return p.id === ($('input[name=pm]:checked') || {}).value; })[0] || PAYS[0]; }
+		function pm() { var l = payList(); return l.filter(function (p) { return p.id === ($('input[name=pm]:checked') || {}).value; })[0] || l[0]; }
 		function calc() {
 			if (sel === null) return null;
 			var base = priceOf(g, g.packs[sel][1]);
@@ -782,6 +1092,8 @@ em{font-style:normal;color:var(--pink)}
 			});
 			if (!ok) { toast('Please fill in your account details first'); $('.fields').scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
 			var who = g.voucher ? vals[0] : g.ids.map(function (l, i) { return l + ' ' + vals[i]; }).join(', ');
+			var u = me();
+			if (pm().id === 'wallet' && u && u.bal < calc().tot) { toast('Not enough wallet balance. Add funds first'); return; }
 			payModal(g, calc(), pm(), g.packs[sel][0].toLocaleString() + ' ' + g.cur, who);
 		});
 		paint();
@@ -805,9 +1117,10 @@ em{font-style:normal;color:var(--pink)}
 
 	function payModal(g, c, p, pk, who) {
 		var modal = $('#modal'), box = $('#mbox'), left = 300;
-		var wallet = p.id !== 'card';
-		box.innerHTML = '<h3>Pay with ' + p.n + '</h3><p class="mu" style="margin:0;font-size:14px">' + (wallet ? 'Open your ' + p.n + ' app and scan this code.' : 'Enter your card details to finish.') + '</p>' +
-			(wallet ? '<div class="qr">' + fakeQR() + '</div><div class="timer" id="tm">Code expires in 5:00</div>' :
+		var bk = p.id === 'wallet', wallet = p.id !== 'card' && !bk, u = me();
+		box.innerHTML = '<h3>Pay with ' + p.n + '</h3><p class="mu" style="margin:0;font-size:14px">' + (bk ? 'The amount is taken straight from your wallet.' : wallet ? 'Open your ' + p.n + ' app and scan this code.' : 'Enter your card details to finish.') + '</p>' +
+			(bk ? '<div class="wbox"><div><span>Wallet balance</span><b>' + peso(u.bal) + '</b></div><div><span>This order</span><b style="color:#ff6b88">−' + peso(c.tot) + '</b></div><div class="after"><span>Balance after</span><b>' + peso(Math.round((u.bal - c.tot) * 100) / 100) + '</b></div></div>' :
+				wallet ? '<div class="qr">' + fakeQR() + '</div><div class="timer" id="tm">Code expires in 5:00</div>' :
 				'<div class="fields" style="margin-top:16px"><div class="fl" style="grid-column:1/-1"><label>Card number</label><input value="4242 4242 4242 4242" readonly></div><div class="fl"><label>Expiry</label><input value="12 / 29" readonly></div><div class="fl"><label>CVC</label><input value="123" readonly></div></div><p class="hint">Demo test card, already filled in.</p>') +
 			'<div class="box" style="margin:18px 0 0;padding:14px"><div style="display:flex;justify-content:space-between;font-size:14px"><span class="mu">' + g.s + ' · ' + pk + '</span><b style="color:var(--pink2);font-family:var(--fo)">' + peso(c.tot) + '</b></div></div>' +
 			'<div class="mrow"><button class="btn o" id="mc">Cancel</button><button class="btn" id="mp">' + (wallet ? 'I\'ve paid' : 'Pay ' + peso(c.tot)) + '</button></div>';
@@ -825,6 +1138,14 @@ em{font-style:normal;color:var(--pink)}
 			setTimeout(function () {
 				close();
 				var o = { id: 'BK-' + (10000 + Math.floor(Math.random() * 89999)), g: g.id, pk: pk, who: who, pm: p.n, tot: c.tot, t: Date.now() };
+				var acc = me();
+				if (acc) o.user = acc.email;
+				if (bk && acc) {
+					// deduct from the wallet and log it
+					acc.bal = Math.round((acc.bal - c.tot) * 100) / 100;
+					addTx(acc, 'Purchase', -c.tot, g.s + ' · ' + pk);
+					saveMe(acc);
+				}
 				if (g.voucher) o.vc = Math.random().toString(36).slice(2, 6).toUpperCase() + '-' + Math.random().toString(36).slice(2, 6).toUpperCase() + '-' + Math.random().toString(36).slice(2, 6).toUpperCase();
 				var list = loadOrders(); list.unshift(o); saveOrders(list);
 				order = o;
@@ -942,7 +1263,8 @@ em{font-style:normal;color:var(--pink)}
 	var bpop = $('#bpop');
 	setInterval(function () {
 		var r = location.hash.replace(/^#\/?/, '').split('/')[0] || 'home';
-		if ((r !== 'home' && r !== 'games') || $('#modal').classList.contains('on') || document.hidden) return;
+		// phones already have the ticker; a popup there would cover the page
+		if ((r !== 'home' && r !== 'games') || innerWidth < 720 || $('#modal').classList.contains('on') || document.hidden) return;
 		var b = fakeBuy();
 		bpop.innerHTML = art(b.g) + '<div><b>' + b.who + '</b> from ' + b.city + '<br>topped up ' + b.q + '<small>' + b.ago + ' min ago · ' + b.g.s + '</small></div>';
 		bpop.classList.add('on');
@@ -980,15 +1302,33 @@ em{font-style:normal;color:var(--pink)}
 				if (next !== last) { last = next; app.innerHTML = next; bindTrack(); }
 			}, 5000);
 		}
+		else if (r === 'login' || r === 'register') {
+			if (me()) { location.hash = '#/account'; return; }
+			app.innerHTML = authPage(r === 'register'); bindAuth(r === 'register');
+		}
+		else if (r === 'account') {
+			if (!me()) { try { sessionStorage.setItem('bk-ret', location.hash); } catch (e) {} location.hash = '#/login'; return; }
+			app.innerHTML = accountPage(h[1]); bindAccount(h[1]);
+		}
 		else if (r === 'faq') app.innerHTML = faqPage();
 		else app.innerHTML = notFound();
 		window.scrollTo({ top: 0, behavior: 'instant' });
+		bpop.classList.remove('on');
+		var t = { home: '', games: 'All games', track: 'Track order', faq: 'FAQ', login: 'Log in', register: 'Create account', account: 'My account', done: 'Order received' }[r];
+		if (r === 'game') t = (game(h[1]) || { n: 'Not found' }).n + ' top-up';
+		document.title = (t ? t + ' · ' : '') + 'Bonaksu Top-Up';
 		// page enter animation, removed afterwards so later re-renders don't replay it
 		app.classList.remove('enter'); void app.offsetWidth; app.classList.add('enter');
 		clearTimeout(route.t); route.t = setTimeout(function () { app.classList.remove('enter'); }, 700);
 		observe(); tickCd(); onScroll();
 	}
+	// remember where the user was when they hit "Log in", so we can send them back after
+	document.addEventListener('click', function (e) {
+		var a = e.target.closest && e.target.closest('[data-ret]');
+		if (a) { try { sessionStorage.setItem('bk-ret', location.hash || '#/'); } catch (x) {} }
+	});
 	window.addEventListener('hashchange', route);
+	paintAcct();
 	route();
 })();
 </script>
